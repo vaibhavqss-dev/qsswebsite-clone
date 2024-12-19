@@ -1,19 +1,41 @@
+.services {
+    height: 30vh;
+    text-align: center;
+    display: flex;
+    background-color: rgb(24, 23, 23);
+}
+
 .service-box{
-    background-color: black;
+    background-color: rgb(44, 42, 42);
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
+    width: 21vw;
 
     text-align: center;
     padding: 2vh;
     margin: 2vh;
-    border-radius: 2vh;
 }
 
-.services {
-    text-align: center;
+.service-box > h1 {
+    font-size: 5vh;
+    font-weight: 500;
 }
+
+/* /////////////////////////////////////////// */
+/* become Partner Goes here */
+.handshake-container{
+    /* padding: 10  vh; */
+    background-image: url("https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/become-partner-img.jpg");
+    /* background-size: ; */
+    height: 100vh;
+    width: 99vw;
+    background-size: cover;
+}
+
+
+
 
 .img-story{
     display: block;
