@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    box-sizing: border-box;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 100;
+    padding: 2vh;
+    color: white;
+    height: 10vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #333;
+}
+
+.hero {
+    color: white;
+    height: 100vh;
+    width: 98vw;
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-list {
+    font-size: 5vh;
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-list li {
+    margin-right: 20px;
+    font-size: 16px;
+}
+
+.navbar-list li:last-child {
+    margin-right: 0;
+}
+
+.qsslogosvg {
+    height: 10vh;
+}
+
+.video-background {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.video-background .content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+}
+
+.video-background::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.GenerativeAI {
+    background-color: red;
+    color: white;
+    padding: 2vh;
+    border-radius: 0.5vh;
+}
+
+.content h1 {
+    text-align: left;
+    padding: 2vh;
+}
+
+.content button {
+    border: none;
+    color: white;
+    padding: 2vh;
+    border-radius: 1vh;
+
+    background-color: red;
+}
+
+.contact {
+    text-align: center;
+    padding: 5vh;
+}
+
+.contact form label {
+    display: block;
+
+}
+
+.engagement-model-btn {
+    background-color: red;
+    padding: 5vh;
+    border-radius: 1vh;
+    color: white;
+    border: none;
+    font-size: 3vh;
+}

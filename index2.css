@@ -1,0 +1,49 @@
+    ::-webkit-scrollbar {
+        width: 1vw;
+    }
+
+    ::-webkit-scrollbar-track {
+        background: transparent;
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: rgb(8, 8, 8);
+        border-radius: 10px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+        background: #383737;
+        cursor: grab;
+    }
+
+
+    /* //////////////////////// */
+    .engagementmodel {
+        background-image: url("./media/img/background.jpg");
+        background-size: cover;
+        height: 100vh;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 1;
+        /* backdrop-filter: blur(25px); */
+    }
+
+    .engagementmodel-container{
+        text-align: center;
+        color: white;
+        width: 50vw;
+        height: 20vh;
+    }
+
+    .engagementmodel-container > button {
+        margin-top: 2vh;
+        font-size: 2.5vh;
+        background-color: transparent;
+        color: white;
+        padding: 1vh;
+        border: 2px solid white;
+        border-radius: 0.8vh;
+    }
