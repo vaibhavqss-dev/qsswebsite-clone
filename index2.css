@@ -28,17 +28,16 @@
         justify-content: center;
         align-items: center;
         opacity: 1;
-        /* backdrop-filter: blur(25px); */
     }
 
-    .engagementmodel-container{
+    .engagementmodel-container {
         text-align: center;
         color: white;
         width: 50vw;
         height: 20vh;
     }
 
-    .engagementmodel-container > button {
+    .engagementmodel-container>button {
         margin-top: 2vh;
         font-size: 2.5vh;
         background-color: transparent;
@@ -48,16 +47,13 @@
         border-radius: 0.8vh;
     }
 
-
-
     .contactcontainer {
         width: 99vw;
         position: relative;
         height: 150vh;
-
     }
 
-    .contactcontainer > img {
+    .contactcontainer>img {
         margin-left: 3vw;
         width: 94vw;
         height: 70vh;
@@ -72,14 +68,14 @@
         align-items: center;
     }
 
-    .contactform{
+    .contactform {
         box-shadow: 1px 1px 15px 0px rgb(27, 27, 27);
         background-color: white;
         width: 80vw;
         height: 80vh;
     }
 
-    .contactform > h2 {
+    .contactform>h2 {
         margin-top: 15vh;
         text-align: center;
         font-weight: 500;
@@ -88,26 +84,56 @@
         font-size: 5vh;
     }
 
-    .contactform > p {
+    .contactform>p {
         text-align: center;
         padding: 6vh;
     }
 
-    .contactform > form {
+    .contactform>form {
         padding: 6vh;
     }
 
-    .contactform > form > label {
+    .contactform>form>label {
         display: inline-block;
     }
 
 
-    .contactform > form > input {
+    .contactform>form>input {
         border: 1px solid gray;
     }
 
 
-    #textmessages{
+    #textmessages {
         height: 15vh;
         width: 20vw;
+    }
+
+
+    /* brandscontainer Goes here.... */
+    .brandscontainer{
+        width: 99vw;
+        height: 100vh;
+    }
+
+    .brandscontainer-details{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        text-align: center;
+        /* width: 40vw; */
+        padding: 7vh;
+    }
+
+    .brandscontainer-images{
+        padding: 10vh;
+        background-color: red;
+    }
+
+    .brandscontainer-images > img{
+        /* width: 9vw; */
+        height: 9vh;
+        padding: 2vh;
+        margin: 5vh;
     }
