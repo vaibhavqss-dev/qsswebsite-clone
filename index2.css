@@ -47,9 +47,13 @@
         border-radius: 0.8vh;
     }
 
+    /* Contact Container Goes Here... */
+
     .contactcontainer {
+        /* background-color: blue; */
         width: 99vw;
         position: relative;
+        top: 5vh;
         height: 150vh;
     }
 
@@ -75,6 +79,12 @@
         height: 80vh;
     }
 
+    .contactform>form {
+        display: flex;
+        justify-content: center;
+        justify-content: center;
+    }
+
     .contactform>h2 {
         margin-top: 15vh;
         text-align: center;
@@ -94,7 +104,8 @@
     }
 
     .contactform>form>label {
-        display: inline-block;
+        display: block;
+
     }
 
 
@@ -110,12 +121,13 @@
 
 
     /* brandscontainer Goes here.... */
-    .brandscontainer{
+    .brandscontainer {
         width: 99vw;
         height: 100vh;
+        /* padding: 10vh; */
     }
 
-    .brandscontainer-details{
+    .brandscontainer-details {
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -126,14 +138,14 @@
         padding: 7vh;
     }
 
-    .brandscontainer-images{
-        padding: 10vh;
-        background-color: red;
+    .brandslogo-container {
+        padding: 0vh 10vh 0vh 15vh;
+        /* background-color: red; */
     }
 
-    .brandscontainer-images > img{
+    .brandslogo-container>img {
         /* width: 9vw; */
-        height: 9vh;
+        height: 7vh;
         padding: 2vh;
         margin: 5vh;
     }

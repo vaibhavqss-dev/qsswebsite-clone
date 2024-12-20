@@ -26,16 +26,70 @@
 /* /////////////////////////////////////////// */
 /* become Partner Goes here */
 .handshake-container{
-    /* padding: 10  vh; */
-    background-image: url("https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/become-partner-img.jpg");
-    /* background-size: ; */
     height: 100vh;
     width: 99vw;
     background-size: cover;
+    position: relative;
+    margin-bottom: 14vh;
+}
+
+.handshake-container > img {
+    width: 95vw;
+    margin: 3vh 3vh 0vh 4vh;
+}
+
+.handshakedetails {
+    display: flex;
+    position: absolute;
+    top: 27vh;
+    background-color: white;
+    margin: 15vh;
+    box-shadow: 0px 0px 15px 1px black;
+    padding: 5vh;
+}
+
+.handshakedetails > div {
+    padding: 3vh;
+}
+
+.thirty-years {
+    width: 40%;
+    background-color: red;
+}
+
+.handshakesolutions {
+    width: 60%;
+    line-height: 4vh;
+}
+
+.handshakesolutions > h1 {
+    margin: 2vh;
+    font-size: 4vh;
+    font-weight: 600;
+}
+
+.handshakesolutions > h3 {
+    font-size: 3vh;
+    margin: 2vh;
+    font-weight: 600;
+}
+
+.handshakesolutions > p {
+    margin: 2vh;
+}
+
+.handshakesolutionsbuttion {
+    border: 1px solid red;
+    padding: 2vh;
+    width: 12vw;
+    color: red;
+    font-weight: bolder;
+    border-radius: 1vh;
+    background-color: transparent;
 }
 
 
-
+/* img story Container Goes Here.... */
 
 .img-story{
     display: block;
