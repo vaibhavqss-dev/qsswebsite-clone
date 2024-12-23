@@ -1,15 +1,19 @@
 {
   "name": "website",
   "version": "1.0.0",
-  "description": "��#\u0000 \u0000q\u0000s\u0000s\u0000w\u0000e\u0000b\u0000s\u0000i\u0000t\u0000e\u0000-\u0000c\u0000l\u0000o\u0000n\u0000e\u0000\r\u0000 \u0000",
+  "description": "This is Website Known for this purpose",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "sass:index": "sass sass/index.scss css/index.css",
+    "sass:index1": "sass sass/index1.scss css/index1.css",
+    "sass:index2": "sass sass/index2.scss css/index2.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.7.1"
+    "jquery": "^3.7.1",
+    "sass": "^1.83.0"
   }
 }

@@ -1,3 +1,10 @@
+@mixin align-center-flex() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .services {
     height: 30vh;
     text-align: center;
@@ -5,7 +12,7 @@
     background-color: rgb(24, 23, 23);
 }
 
-.service-box{
+.service-box {
     background-color: rgb(44, 42, 42);
     color: white;
     font-family: "Poppins", sans-serif;
@@ -18,14 +25,14 @@
     margin: 2vh;
 }
 
-.service-box > h1 {
+.service-box>h1 {
     font-size: 5vh;
     font-weight: 500;
 }
 
 /* /////////////////////////////////////////// */
 /* become Partner Goes here */
-.handshake-container{
+.handshake-container {
     height: 100vh;
     width: 99vw;
     background-size: cover;
@@ -33,7 +40,7 @@
     margin-bottom: 14vh;
 }
 
-.handshake-container > img {
+.handshake-container>img {
     width: 95vw;
     margin: 3vh 3vh 0vh 4vh;
 }
@@ -41,20 +48,34 @@
 .handshakedetails {
     display: flex;
     position: absolute;
-    /* top: 27vh; */
     background-color: white;
     margin: 15vh;
     box-shadow: 0px 0px 15px 1px black;
     padding: 5vh;
 }
 
-.handshakedetails > div {
+.handshakedetails>div {
     padding: 3vh;
+}
+
+@mixin colorgrp($color) {
+    background-color: $color;
+}
+
+.leftside-squarebracket {
+    background-color: #ec3636;
+    height: 15rem;
+    width: 1rem;
+
+}
+
+.rightside-squarebracket {
+    background-color: #ec3636;
+
 }
 
 .thirty-years {
     width: 40%;
-    /* background-color: red; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,19 +92,19 @@
     line-height: 4vh;
 }
 
-.handshakesolutions > h1 {
+.handshakesolutions>h1 {
     margin: 2vh;
     font-size: 4vh;
     font-weight: 600;
 }
 
-.handshakesolutions > h3 {
+.handshakesolutions>h3 {
     font-size: 3vh;
     margin: 2vh;
     font-weight: 600;
 }
 
-.handshakesolutions > p {
+.handshakesolutions>p {
     margin: 2vh;
 }
 
@@ -106,17 +127,15 @@
 }
 
 /* img story Container Goes Here.... */
-
-.img-story{
+.img-story {
     display: block;
 }
 
-.success-stories{
+.success-stories {
     text-align: center;
-
 }
 
-.engagement-model{
+.engagement-model {
     color: white;
     /* height: 50vh; */
     padding: 20vh 0 0 0;
@@ -137,7 +156,7 @@
 }
 
 
-.contactinfo-container > div {
+.contactinfo-container>div {
     margin: 4vh 0;
 }
 
@@ -155,11 +174,11 @@
     /* background-color: red; */
 }
 
-.contactinfo > p {
+.contactinfo>p {
     margin-left: 1vw;
 }
 
-.contactinfo > svg {
+.contactinfo>svg {
     height: 7vh;
 }
 
@@ -167,7 +186,7 @@
 /* /////////////////////////////////////////////////////// */
 /* FooterSectionGoesHere */
 
-.footer-section-goes-here{
+.footer-section-goes-here {
     display: flex;
     background-color: rgb(22, 20, 20);
     color: white;
@@ -181,7 +200,7 @@
 .footerabout-section {
     margin-top: 7vh;
     height: 55vh;
-    width: 24vw;    
+    width: 24vw;
     display: inline-block;
 }
 
@@ -189,23 +208,24 @@
     height: 11vh;
 }
 
-.footerabout-section > p {
+.footerabout-section>p {
     line-height: 4vh;
 }
 
-.item-social img{
+.item-social img {
     background-color: rgb(48, 45, 45);
     border-radius: 5vh;
     height: 6vh;
 }
 
 
-.industries{
+.industries {
     margin-top: 7vh;
     height: 55vh;
     line-height: 5vh;
 }
-.industries > ul {
+
+.industries>ul {
     list-style-type: none;
 }
 
@@ -215,7 +235,7 @@
     line-height: 5vh;
 }
 
-.footerServices-section > ul {
+.footerServices-section>ul {
     list-style-type: none;
 }
 
@@ -225,7 +245,7 @@
     line-height: 5vh;
 }
 
-.quicklinks > ul {
+.quicklinks>ul {
     list-style-type: none;
 }
 
@@ -233,10 +253,10 @@
     margin-top: 7vh;
     height: 55vh;
     line-height: 5vh;
-    overflow: hidden    ;
+    overflow: hidden;
 }
 
-.techbtn-container{
+.techbtn-container {
 
     /* height:  75vh; */
     /* display: flex; */
@@ -245,7 +265,7 @@
     overflow: hidden;
 }
 
-.techbtn{
+.techbtn {
     text-align: center;
     border: 1px solid rgb(161, 158, 158);
     border-radius: 1vh;
@@ -268,21 +288,13 @@ footer {
     font-size: 1.5vh;
 }
 
-footer > img {
+footer>img {
     margin: 2vh;
     height: 6vh;
 }
 
-
-
-
-
-
-
-
-
 /* Chatbot Element starts from here */
-.chatbotcontainer{
+.chatbotcontainer {
     background-color: white;
     position: fixed;
     z-index: 100;
@@ -298,16 +310,15 @@ footer > img {
     align-items: center;
 }
 
-.chatbox-image{
+.chatbox-image {
     width: 5vw;
     height: 10vh;
     background-color: blue;
 }
 
-.chatbox-msgpopbox{
+.chatbox-msgpopbox {
     width: 5vw;
     height: 10vh;
     border-radius: 10vw;
     background-color: red;
 }
-

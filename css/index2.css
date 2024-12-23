@@ -22,7 +22,6 @@
     }
 
     /* scrollbar-width  */
-
     ::-webkit-scrollbar-thumb:hover {
         background: #383737;
         cursor: grab;
@@ -31,14 +30,13 @@
 
     /* //////////////////////// */
     .engagementmodel {
-        background-image: url("./media/img/background.jpg");
+        background-image: url("https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/engagement-models-cta-banner.jpg");
         background-size: cover;
         height: 100vh;
-
+        opacity: 1;
         display: flex;
         justify-content: center;
         align-items: center;
-        opacity: 1;
     }
 
     .engagementmodel-container {
@@ -59,7 +57,6 @@
     }
 
     /* Contact Container Goes Here... */
-
     .contactcontainer {
         /* background-color: blue; */
         width: 99vw;

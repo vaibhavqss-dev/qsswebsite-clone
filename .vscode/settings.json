@@ -1,3 +1,12 @@
 {
-    "liveServer.settings.port": 5501
+    "liveServer.settings.port": 5501,
+    "files.exclude": {
+        "**/.git": true,                    
+        "**/node_modules": true,         
+    },
+    "search.exclude": {
+        "**/node_modules": true,  
+
+    },
+    "git.defaultCommitMessage": "This is a default commit message",
 }
