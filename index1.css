@@ -41,7 +41,7 @@
 .handshakedetails {
     display: flex;
     position: absolute;
-    top: 27vh;
+    /* top: 27vh; */
     background-color: white;
     margin: 15vh;
     box-shadow: 0px 0px 15px 1px black;
@@ -54,7 +54,16 @@
 
 .thirty-years {
     width: 40%;
-    background-color: red;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.thirtynumber {
+    color: red;
+    font-size: 9vh;
+    font-weight: 500;
 }
 
 .handshakesolutions {
@@ -86,8 +95,15 @@
     font-weight: bolder;
     border-radius: 1vh;
     background-color: transparent;
+    font-weight: 700;
 }
 
+.handshakesolutionsbuttion:hover {
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    transition: all 1s;
+}
 
 /* img story Container Goes Here.... */
 

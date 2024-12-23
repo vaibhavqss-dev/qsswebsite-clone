@@ -1,16 +1,27 @@
     ::-webkit-scrollbar {
-        width: 1vw;
+        width: 7px;
+        height: 10px;
+        display: none;
     }
 
     ::-webkit-scrollbar-track {
-        background: transparent;
+        /* background: transparent; */
         border-radius: 10px;
+        opacity: 0;
+        display: transparent;
+        z-index: -100;
+        position: static;
     }
 
     ::-webkit-scrollbar-thumb {
         background: rgb(8, 8, 8);
         border-radius: 10px;
+        /* height: 3vh; */
+        /* size: 1vh; */
+        /* width: 1vw; */
     }
+
+    /* scrollbar-width  */
 
     ::-webkit-scrollbar-thumb:hover {
         background: #383737;
