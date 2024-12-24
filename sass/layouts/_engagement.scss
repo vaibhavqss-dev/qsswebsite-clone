@@ -1,0 +1,28 @@
+
+/* //////////////////////// */
+.engagementmodel {
+    background-image: url("https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/engagement-models-cta-banner.jpg");
+    background-size: cover;
+    height: 100vh;
+    opacity: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.engagementmodel-container {
+    text-align: center;
+    color: white;
+    width: 50vw;
+    height: 20vh;
+}
+
+.engagementmodel-container>button {
+    margin-top: 2vh;
+    font-size: 2.5vh;
+    background-color: transparent;
+    color: white;
+    padding: 1vh;
+    border: 2px solid white;
+    border-radius: 0.8vh;
+}

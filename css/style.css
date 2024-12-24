@@ -86,15 +86,6 @@ body {
   display: block;
 }
 
-.engagement-model-btn {
-  background-color: red;
-  padding: 5vh;
-  border-radius: 1vh;
-  color: white;
-  border: none;
-  font-size: 3vh;
-}
-
 .services {
   padding: 2vh;
   margin-top: 13vh;
@@ -248,10 +239,6 @@ body {
 }
 
 .techbtn-container {
-  /* height:  75vh; */
-  /* display: flex; */
-  /* display: flex; */
-  /* width: 1vw; */
   overflow: hidden;
 }
 
@@ -279,159 +266,6 @@ footer {
 footer > img {
   margin: 2vh;
   height: 6vh;
-}
-
-/* Chatbot Element starts from here */
-.chatbotcontainer {
-  background-color: white;
-  position: fixed;
-  z-index: 100;
-  top: 86vh;
-  right: 4vh;
-  width: 20vw;
-  height: 10vh;
-  border-radius: 10vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.chatbox-image {
-  width: 5vw;
-  height: 10vh;
-  background-color: blue;
-}
-
-.chatbox-msgpopbox {
-  width: 5vw;
-  height: 10vh;
-  border-radius: 10vw;
-  background-color: red;
-}
-
-::-webkit-scrollbar {
-  width: 7px;
-  height: 10px;
-  display: none;
-}
-
-::-webkit-scrollbar-track {
-  /* background: transparent; */
-  border-radius: 10px;
-  opacity: 0;
-  display: transparent;
-  z-index: -100;
-  position: static;
-}
-
-::-webkit-scrollbar-thumb {
-  background: rgb(8, 8, 8);
-  border-radius: 10px;
-  /* height: 3vh; */
-  /* size: 1vh; */
-  /* width: 1vw; */
-}
-
-/* scrollbar-width  */
-::-webkit-scrollbar-thumb:hover {
-  background: #383737;
-  cursor: grab;
-}
-
-/* //////////////////////// */
-.engagementmodel {
-  background-image: url("https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/engagement-models-cta-banner.jpg");
-  background-size: cover;
-  height: 100vh;
-  opacity: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.engagementmodel-container {
-  text-align: center;
-  color: white;
-  width: 50vw;
-  height: 20vh;
-}
-
-.engagementmodel-container > button {
-  margin-top: 2vh;
-  font-size: 2.5vh;
-  background-color: transparent;
-  color: white;
-  padding: 1vh;
-  border: 2px solid white;
-  border-radius: 0.8vh;
-}
-
-/* Contact Container Goes Here... */
-.contactcontainer {
-  /* background-color: blue; */
-  width: 99vw;
-  position: relative;
-  top: 5vh;
-  height: 150vh;
-}
-
-.contactcontainer > img {
-  margin-left: 3vw;
-  width: 94vw;
-  height: 70vh;
-}
-
-.contactform-container {
-  position: absolute;
-  top: 35vh;
-  width: 99vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.contactform {
-  box-shadow: 1px 1px 15px 0px rgb(27, 27, 27);
-  background-color: white;
-  width: 80vw;
-  height: 80vh;
-}
-
-.contactform > form {
-  display: flex;
-  justify-content: center;
-  justify-content: center;
-}
-
-.contactform > h2 {
-  margin-top: 15vh;
-  text-align: center;
-  font-weight: 500;
-  line-height: 5vh;
-  padding: 1vh;
-  font-size: 5vh;
-}
-
-.contactform > p {
-  text-align: center;
-  padding: 6vh;
-}
-
-.contactform > form {
-  padding: 6vh;
-}
-
-.contactform > form > label {
-  display: block;
-}
-
-.contactform > form > input {
-  border: 1px solid gray;
-}
-
-#textmessages {
-  height: 15vh;
-  width: 20vw;
 }
 
 /* brandscontainer Goes here.... */
@@ -605,6 +439,134 @@ footer > img {
   color: white;
   cursor: pointer;
   transition: all 1s;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 10px;
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  /* background: transparent; */
+  border-radius: 10px;
+  opacity: 0;
+  display: transparent;
+  z-index: -100;
+  position: static;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(8, 8, 8);
+  border-radius: 10px;
+  /* height: 3vh; */
+  /* size: 1vh; */
+  /* width: 1vw; */
+}
+
+/* scrollbar-width  */
+::-webkit-scrollbar-thumb:hover {
+  background: #383737;
+  cursor: grab;
+}
+
+/* //////////////////////// */
+.engagementmodel {
+  background-image: url("https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/engagement-models-cta-banner.jpg");
+  background-size: cover;
+  height: 100vh;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.engagementmodel-container {
+  text-align: center;
+  color: white;
+  width: 50vw;
+  height: 20vh;
+}
+
+.engagementmodel-container > button {
+  margin-top: 2vh;
+  font-size: 2.5vh;
+  background-color: transparent;
+  color: white;
+  padding: 1vh;
+  border: 2px solid white;
+  border-radius: 0.8vh;
+}
+
+/* Contact Container Goes Here... */
+.contactcontainer {
+  position: relative;
+}
+
+.contactcontainer > img {
+  margin: 3vh;
+  width: 97vw;
+}
+
+.contactform-container {
+  margin: 9rem;
+  padding: 4rem;
+  box-shadow: 1px 1px 15px 0px rgb(27, 27, 27);
+  background-color: white;
+  position: absolute;
+  top: 19vh;
+  width: 72vw;
+}
+
+.contactform-details {
+  font-family: "Poppins", sans-serif;
+  font-size: 3vh;
+  text-align: center;
+  font-weight: 400;
+}
+
+.contactform-details > p {
+  font-size: 1.1rem;
+}
+
+.contactform {
+  margin: 2vw;
+  height: 100vh;
+  width: 65vw;
+  background-color: red;
+}
+
+.contactform > form > label {
+  display: inline-block;
+  width: 46vw;
+}
+
+/* Chatbot Element starts from here */
+.chatbotcontainer {
+  background-color: white;
+  position: fixed;
+  z-index: 100;
+  top: 86vh;
+  right: 4vh;
+  width: 20vw;
+  height: 10vh;
+  border-radius: 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatbox-image {
+  width: 5vw;
+  height: 10vh;
+  background-color: blue;
+}
+
+.chatbox-msgpopbox {
+  width: 5vw;
+  height: 10vh;
+  border-radius: 10vw;
+  background-color: red;
 }
 
 /*# sourceMappingURL=style.css.map */

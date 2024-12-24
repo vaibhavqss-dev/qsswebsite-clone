@@ -158,11 +158,6 @@
 }
 
 .techbtn-container {
-
-    /* height:  75vh; */
-    /* display: flex; */
-    /* display: flex; */
-    /* width: 1vw; */
     overflow: hidden;
 }
 
@@ -174,11 +169,8 @@
     margin: 1vh;
     overflow: hidden;
 }
-
 /* //////////////////////////////// */
 /* //////////////////////////////// */
-
-
 footer {
     background: #000;
     padding: 1vh;
@@ -192,34 +184,4 @@ footer {
 footer>img {
     margin: 2vh;
     height: 6vh;
-}
-
-/* Chatbot Element starts from here */
-.chatbotcontainer {
-    background-color: white;
-    position: fixed;
-    z-index: 100;
-    top: 86vh;
-    right: 4vh;
-    width: 20vw;
-    height: 10vh;
-
-    border-radius: 10vw;
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.chatbox-image {
-    width: 5vw;
-    height: 10vh;
-    background-color: blue;
-}
-
-.chatbox-msgpopbox {
-    width: 5vw;
-    height: 10vh;
-    border-radius: 10vw;
-    background-color: red;
 }

@@ -1,0 +1,30 @@
+
+/* brandscontainer Goes here.... */
+.brandscontainer {
+    width: 99vw;
+    height: 100vh;
+    /* padding: 10vh; */
+}
+
+.brandscontainer-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    /* width: 40vw; */
+    padding: 7vh;
+}
+
+.brandslogo-container {
+    padding: 0vh 10vh 0vh 15vh;
+    /* background-color: red; */
+}
+
+.brandslogo-container>img {
+    /* width: 9vw; */
+    height: 7vh;
+    padding: 2vh;
+    margin: 5vh;
+}

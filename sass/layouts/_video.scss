@@ -9,44 +9,6 @@
     // height: 100vh;
 }
 
-// .video-background {
-//     position: relative;
-//     width: 100vw;
-//     height: 100vh;
-//     overflow: hidden;
-// }
-
-// .video-background video {
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-//     width: 100%;
-//     height: 100%;
-//     object-fit: cover;
-// }
-
-// .video-background .content {
-//     position: relative;
-//     z-index: 2;
-//     text-align: center;
-//     color: white;
-//     top: 50%;
-//     transform: translateY(-50%);
-//     font-size: 2rem;
-// }
-
-// .video-background::before {
-//     content: "";
-//     position: absolute;
-//     top: 0;
-//     left: 0;
-//     width: 100%;
-//     height: 100%;
-//     background: rgba(0, 0, 0, 0.5);
-//     z-index: 1;
-// }
-
 /* VideoText */
 .videoover-text {
     position: absolute;
@@ -65,19 +27,19 @@
     background-color: #ec3636;
     padding: 2vh;
     border-radius: 1vh;
-    font-weight: 400;
+    font-weight: 400; 
     font-family: 'Poppins';
     font-size: 3vh;
 }
 
 .videooverbtn-portfolio {
     color: #ec3636;
-    background-color: white;
+    background-color: white; 
     border: none;
     padding: 2vh 3vh;
     border-radius: 1vh;
     font-size: 2.5vh;
-    margin-left: 5vh;
+    margin-left: 5vh; 
     font-family: 'Poppins';
 }
 
