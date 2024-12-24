@@ -1,0 +1,610 @@
+.navbar {
+  position: fixed;
+  z-index: 200;
+  padding: 1vh 0 0 0;
+  color: white;
+  height: 10vh;
+  width: 100vw;
+  background-color: #1a1919;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbardetails-content {
+  width: 89vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-list {
+  font-size: 4vh;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navbar-list li {
+  margin-right: 28px;
+  font-size: 17px;
+}
+
+.navbar-list li:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.Generativeai-reddot {
+  width: 0vw;
+  border: 4px solid white;
+  margin-right: 2vh;
+  height: 2vh;
+  width: 1vw;
+  border-radius: 3vh;
+}
+
+.navbar-list li:last-child {
+  height: 3vh;
+  background-color: red;
+  color: white;
+  margin-left: 0vh;
+  padding: 2vh 2vh 2vh 1vh;
+  border-radius: 0.3vh;
+  width: 13vw;
+  font-weight: bolder;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qsslogosvg {
+  height: 8.5vh;
+  margin-left: 3vh;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  box-sizing: border-box;
+}
+
+/* Contact List Goes.... */
+.contact {
+  text-align: center;
+  padding: 5vh;
+}
+
+.contact form label {
+  display: block;
+}
+
+.engagement-model-btn {
+  background-color: red;
+  padding: 5vh;
+  border-radius: 1vh;
+  color: white;
+  border: none;
+  font-size: 3vh;
+}
+
+.services {
+  padding: 2vh;
+  margin-top: 13vh;
+  height: 30vh;
+  padding: 2vh;
+  text-align: center;
+  display: flex;
+  background-color: rgb(24, 23, 23);
+}
+
+.service-box {
+  background-color: rgb(44, 42, 42);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  width: 21vw;
+  text-align: center;
+  padding: 2vh;
+  margin: 2vh;
+}
+
+.service-box > h1 {
+  font-size: 5vh;
+  font-weight: 500;
+}
+
+/* /////////////////////////////////////////// */
+/* img story Container Goes Here.... */
+.img-story {
+  display: block;
+}
+
+.success-stories {
+  text-align: center;
+}
+
+.engagement-model {
+  color: white;
+  /* height: 50vh; */
+  padding: 20vh 0 0 0;
+  /* justify-content: center; */
+  text-align: center;
+  height: 100vh;
+  width: 98vw;
+  background-image: url("./static_content/img/background.jpg");
+}
+
+.section-contactinfo {
+  background: #181818;
+  padding: 2vh;
+  background-image: url(https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/usa-address-bg.jpg);
+  background-size: 100% 100%;
+  height: 100vh;
+}
+
+.contactinfo-container > div {
+  margin: 4vh 0;
+}
+
+.contactinfo-container p {
+  display: inline;
+  text-align: center;
+}
+
+.contactinfo {
+  width: 60vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  /* background-color: red; */
+}
+
+.contactinfo > p {
+  margin-left: 1vw;
+}
+
+.contactinfo > svg {
+  height: 7vh;
+}
+
+/* /////////////////////////////////////////////////////// */
+/* FooterSectionGoesHere */
+.footer-section-goes-here {
+  display: flex;
+  background-color: rgb(22, 20, 20);
+  color: white;
+  /* padding: 2vh; */
+  justify-content: space-around;
+  align-items: center;
+  font-size: 2vh;
+  font-family: "Poppins", sans-serif;
+}
+
+.footerabout-section {
+  margin-top: 7vh;
+  height: 55vh;
+  width: 24vw;
+  display: inline-block;
+}
+
+.footerabout-section img {
+  height: 11vh;
+}
+
+.footerabout-section > p {
+  line-height: 4vh;
+}
+
+.item-social img {
+  background-color: rgb(48, 45, 45);
+  border-radius: 5vh;
+  height: 6vh;
+}
+
+.industries {
+  margin-top: 7vh;
+  height: 55vh;
+  line-height: 5vh;
+}
+
+.industries > ul {
+  list-style-type: none;
+}
+
+.footerServices-section {
+  margin-top: 7vh;
+  height: 55vh;
+  line-height: 5vh;
+}
+
+.footerServices-section > ul {
+  list-style-type: none;
+}
+
+.quicklinks {
+  margin-top: 7vh;
+  height: 55vh;
+  line-height: 5vh;
+}
+
+.quicklinks > ul {
+  list-style-type: none;
+}
+
+.footerTechnologies-section {
+  margin-top: 7vh;
+  height: 55vh;
+  line-height: 5vh;
+  overflow: hidden;
+}
+
+.techbtn-container {
+  /* height:  75vh; */
+  /* display: flex; */
+  /* display: flex; */
+  /* width: 1vw; */
+  overflow: hidden;
+}
+
+.techbtn {
+  text-align: center;
+  border: 1px solid rgb(161, 158, 158);
+  border-radius: 1vh;
+  display: block;
+  margin: 1vh;
+  overflow: hidden;
+}
+
+/* //////////////////////////////// */
+/* //////////////////////////////// */
+footer {
+  background: #000;
+  padding: 1vh;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.5vh;
+}
+
+footer > img {
+  margin: 2vh;
+  height: 6vh;
+}
+
+/* Chatbot Element starts from here */
+.chatbotcontainer {
+  background-color: white;
+  position: fixed;
+  z-index: 100;
+  top: 86vh;
+  right: 4vh;
+  width: 20vw;
+  height: 10vh;
+  border-radius: 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chatbox-image {
+  width: 5vw;
+  height: 10vh;
+  background-color: blue;
+}
+
+.chatbox-msgpopbox {
+  width: 5vw;
+  height: 10vh;
+  border-radius: 10vw;
+  background-color: red;
+}
+
+::-webkit-scrollbar {
+  width: 7px;
+  height: 10px;
+  display: none;
+}
+
+::-webkit-scrollbar-track {
+  /* background: transparent; */
+  border-radius: 10px;
+  opacity: 0;
+  display: transparent;
+  z-index: -100;
+  position: static;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(8, 8, 8);
+  border-radius: 10px;
+  /* height: 3vh; */
+  /* size: 1vh; */
+  /* width: 1vw; */
+}
+
+/* scrollbar-width  */
+::-webkit-scrollbar-thumb:hover {
+  background: #383737;
+  cursor: grab;
+}
+
+/* //////////////////////// */
+.engagementmodel {
+  background-image: url("https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/engagement-models-cta-banner.jpg");
+  background-size: cover;
+  height: 100vh;
+  opacity: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.engagementmodel-container {
+  text-align: center;
+  color: white;
+  width: 50vw;
+  height: 20vh;
+}
+
+.engagementmodel-container > button {
+  margin-top: 2vh;
+  font-size: 2.5vh;
+  background-color: transparent;
+  color: white;
+  padding: 1vh;
+  border: 2px solid white;
+  border-radius: 0.8vh;
+}
+
+/* Contact Container Goes Here... */
+.contactcontainer {
+  /* background-color: blue; */
+  width: 99vw;
+  position: relative;
+  top: 5vh;
+  height: 150vh;
+}
+
+.contactcontainer > img {
+  margin-left: 3vw;
+  width: 94vw;
+  height: 70vh;
+}
+
+.contactform-container {
+  position: absolute;
+  top: 35vh;
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactform {
+  box-shadow: 1px 1px 15px 0px rgb(27, 27, 27);
+  background-color: white;
+  width: 80vw;
+  height: 80vh;
+}
+
+.contactform > form {
+  display: flex;
+  justify-content: center;
+  justify-content: center;
+}
+
+.contactform > h2 {
+  margin-top: 15vh;
+  text-align: center;
+  font-weight: 500;
+  line-height: 5vh;
+  padding: 1vh;
+  font-size: 5vh;
+}
+
+.contactform > p {
+  text-align: center;
+  padding: 6vh;
+}
+
+.contactform > form {
+  padding: 6vh;
+}
+
+.contactform > form > label {
+  display: block;
+}
+
+.contactform > form > input {
+  border: 1px solid gray;
+}
+
+#textmessages {
+  height: 15vh;
+  width: 20vw;
+}
+
+/* brandscontainer Goes here.... */
+.brandscontainer {
+  width: 99vw;
+  height: 100vh;
+  /* padding: 10vh; */
+}
+
+.brandscontainer-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* width: 40vw; */
+  padding: 7vh;
+}
+
+.brandslogo-container {
+  padding: 0vh 10vh 0vh 15vh;
+  /* background-color: red; */
+}
+
+.brandslogo-container > img {
+  /* width: 9vw; */
+  height: 7vh;
+  padding: 2vh;
+  margin: 5vh;
+}
+
+.video-section {
+  height: 100vh;
+  width: 100vw;
+}
+
+.video-section > video {
+  width: 100vw;
+}
+
+/* VideoText */
+.videoover-text {
+  position: absolute;
+  top: 24vh;
+  color: white;
+  padding: 5vh;
+}
+
+.videoover-textdisplay {
+  margin: 0vh 0vh 15vh 0vh;
+}
+
+.videooverbtn-consultation {
+  border: none;
+  color: white;
+  background-color: #ec3636;
+  padding: 2vh;
+  border-radius: 1vh;
+  font-weight: 400;
+  font-family: "Poppins";
+  font-size: 3vh;
+}
+
+.videooverbtn-portfolio {
+  color: #ec3636;
+  background-color: white;
+  border: none;
+  padding: 2vh 3vh;
+  border-radius: 1vh;
+  font-size: 2.5vh;
+  margin-left: 5vh;
+  font-family: "Poppins";
+}
+
+.videooverbtn-rating {
+  background-image: url(https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/qss-reviews-icon.png);
+  background-repeat: no-repeat;
+  width: 13vw;
+  height: 7vh;
+  display: block;
+  border: none;
+  padding: 3vh;
+  margin-top: 4vh;
+  border-radius: 1vh;
+}
+
+.handshake-container {
+  height: 100vh;
+  width: 99vw;
+  background-size: cover;
+  position: relative;
+  margin-bottom: 14vh;
+}
+
+.handshake-container > img {
+  width: 95vw;
+  margin: 3vh 3vh 0vh 4vh;
+}
+
+.handshakedetails {
+  top: 30vh;
+  display: flex;
+  position: absolute;
+  background-color: white;
+  margin: 15vh;
+  box-shadow: 0px 0px 15px 1px black;
+  padding: 5vh;
+}
+
+.handshakedetails > div {
+  padding: 3vh;
+}
+
+.leftside-squarebracket {
+  background-color: #ec3636;
+  height: 15rem;
+  width: 1rem;
+}
+
+.rightside-squarebracket {
+  background-color: #ec3636;
+}
+
+.thirty-years {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.thirtynumber {
+  color: red;
+  font-size: 9vh;
+  font-weight: 500;
+}
+
+.handshakesolutions {
+  width: 60%;
+  line-height: 4vh;
+}
+
+.handshakesolutions > h1 {
+  margin: 2vh;
+  font-size: 4vh;
+  font-weight: 600;
+}
+
+.handshakesolutions > h3 {
+  font-size: 3vh;
+  margin: 2vh;
+  font-weight: 600;
+}
+
+.handshakesolutions > p {
+  margin: 2vh;
+}
+
+.handshakesolutionsbuttion {
+  border: 1px solid red;
+  padding: 2vh;
+  width: 12vw;
+  color: red;
+  font-weight: bolder;
+  border-radius: 1vh;
+  background-color: transparent;
+  font-weight: 700;
+}
+
+.handshakesolutionsbuttion:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  transition: all 1s;
+}
+
+/*# sourceMappingURL=style.css.map */

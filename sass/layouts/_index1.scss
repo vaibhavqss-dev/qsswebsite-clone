@@ -1,12 +1,8 @@
-@mixin align-center-flex() {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 .services {
+    padding: 2vh;
+    margin-top: 13vh;
     height: 30vh;
+    padding: 2vh;
     text-align: center;
     display: flex;
     background-color: rgb(24, 23, 23);
@@ -31,101 +27,6 @@
 }
 
 /* /////////////////////////////////////////// */
-/* become Partner Goes here */
-.handshake-container {
-    height: 100vh;
-    width: 99vw;
-    background-size: cover;
-    position: relative;
-    margin-bottom: 14vh;
-}
-
-.handshake-container>img {
-    width: 95vw;
-    margin: 3vh 3vh 0vh 4vh;
-}
-
-.handshakedetails {
-    display: flex;
-    position: absolute;
-    background-color: white;
-    margin: 15vh;
-    box-shadow: 0px 0px 15px 1px black;
-    padding: 5vh;
-}
-
-.handshakedetails>div {
-    padding: 3vh;
-}
-
-@mixin colorgrp($color) {
-    background-color: $color;
-}
-
-.leftside-squarebracket {
-    background-color: #ec3636;
-    height: 15rem;
-    width: 1rem;
-
-}
-
-.rightside-squarebracket {
-    background-color: #ec3636;
-
-}
-
-.thirty-years {
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.thirtynumber {
-    color: red;
-    font-size: 9vh;
-    font-weight: 500;
-}
-
-.handshakesolutions {
-    width: 60%;
-    line-height: 4vh;
-}
-
-.handshakesolutions>h1 {
-    margin: 2vh;
-    font-size: 4vh;
-    font-weight: 600;
-}
-
-.handshakesolutions>h3 {
-    font-size: 3vh;
-    margin: 2vh;
-    font-weight: 600;
-}
-
-.handshakesolutions>p {
-    margin: 2vh;
-}
-
-.handshakesolutionsbuttion {
-    border: 1px solid red;
-    padding: 2vh;
-    width: 12vw;
-    color: red;
-    font-weight: bolder;
-    border-radius: 1vh;
-    background-color: transparent;
-    font-weight: 700;
-}
-
-.handshakesolutionsbuttion:hover {
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    transition: all 1s;
-}
-
 /* img story Container Goes Here.... */
 .img-story {
     display: block;

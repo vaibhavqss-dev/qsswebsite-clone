@@ -1,19 +1,20 @@
 {
-  "name": "website",
+  "name": "clone-of-qss-website",
   "version": "1.0.0",
-  "description": "This is Website Known for this purpose",
+  "description": "This is Clone of qss website",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "sass:index": "sass sass/index.scss css/index.css",
-    "sass:index1": "sass sass/index1.scss css/index1.css",
-    "sass:index2": "sass sass/index2.scss css/index2.css"
+    "start": "node index.html",
+    "compile:scss": "sass sass/main.scss css/style.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.7.1",
+    "live-server": "^1.2.2"
+  },
+  "devDependencies": {
     "sass": "^1.83.0"
   }
 }

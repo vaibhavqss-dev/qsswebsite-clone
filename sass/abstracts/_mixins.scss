@@ -1,0 +1,9 @@
+@mixin align-center-flex(){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin colorgrp($color) {
+    background-color: $color;
+}
