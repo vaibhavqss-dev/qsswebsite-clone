@@ -1,90 +1,91 @@
-.handshake-container {
+.handshake-section {
     height: 100vh;
     width: 99vw;
     background-size: cover;
     position: relative;
     margin-bottom: 14vh;
-}
 
-.handshake-container>img {
-    width: 95vw;
-    margin: 3vh 3vh 0vh 4vh;
-}
+    &>img {
+        width: 95vw;
+        margin: 3vh 3vh 0vh 4vh;
+    }
 
-.handshakedetails { 
-    top: 30vh;
-    display: flex;
-    position: absolute;
-    background-color: white;
-    margin: 15vh;
-    box-shadow: 0px 0px 15px 1px black;
-    padding: 5vh;
-}
+    &-details {
+        top: 30vh;
+        display: flex;
+        position: absolute;
+        background-color: white;
+        margin: 15vh;
+        box-shadow: 0px 0px 15px 1px black;
+        padding: 5vh;
 
-.handshakedetails>div {
-    padding: 3vh;
-}
+        &>div {
+            padding: 3vh;
+        }
 
-.leftside-squarebracket {
-    background-color: #ec3636;
-    height: 15rem;
-    width: 1rem;
 
-}
+        &_thirty-years {
+            width: 40%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
 
-.rightside-squarebracket {
-    background-color: #ec3636;
 
-}
+            &_leftsideSquarebracket {
+                background-color: #ec3636;
+                height: 15rem;
+                width: 1rem;
+            }
 
-.thirty-years {
-    width: 40%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+            &_rightsideSquarebracket {
+                background-color: #ec3636;
+                height: 15rem;
+                width: 1rem;
+            }
 
-.thirtynumber {
-    color: red;
-    font-size: 9vh;
-    font-weight: 500;
-}
+            &_thirtyNumber {
+                color: #ec3636;
+                font-size: 9vh;
+                font-weight: 500;
+            }
 
-.handshakesolutions {
-    width: 60%;
-    line-height: 4vh;
-}
+            &_yearsInText{
+                font-size: 1.4rem;
+                font-weight: 500;
+                width: 7rem;
+            }
+        }
 
-.handshakesolutions>h1 {
-    margin: 2vh;
-    font-size: 4vh;
-    font-weight: 600;
-}
+        &_handshakeSolutions {
+            width: 60%;
+            line-height: 4vh;
 
-.handshakesolutions>h3 {
-    font-size: 3vh;
-    margin: 2vh;
-    font-weight: 600;
-}
 
-.handshakesolutions>p {
-    margin: 2vh;
-}
+            &>h1 {
+                font-weight: 600;
+            }
 
-.handshakesolutionsbuttion {
-    border: 1px solid red;
-    padding: 2vh;
-    width: 12vw;
-    color: red;
-    font-weight: bolder;
-    border-radius: 1vh;
-    background-color: transparent;
-    font-weight: 700;
-}
+            &>h3 {
+                margin: 0.9rem 0rem;
+                font-weight: 600;
+            }
 
-.handshakesolutionsbuttion:hover {
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    transition: all 1s;
+            &_BecomePartnerbtn {
+                border: 1px solid #ec3636;
+                padding: 1rem 2rem;
+                margin: 1.5rem 0rem;
+                color: #ec3636;
+                border-radius: 7px;
+                background-color: transparent;
+                font-weight: 700;
+            }
+
+            &_BecomePartnerbtn:hover {
+                background-color: #ec3636;
+                color: white;
+                cursor: pointer;
+                transition: all 1s;
+            }
+        }
+    }
 }

@@ -4,6 +4,10 @@
     align-items: center;
 }
 
+@mixin display-flex(){
+    display: flex;
+}
+
 @mixin colorgrp($color) {
     background-color: $color;
 }

@@ -1,0 +1,42 @@
+.awards-section {
+    position: relative;
+    top: 7rem;
+    color: white;
+    padding: 2rem;
+    height: 70vh;
+    background-color: rgb(20, 20, 20);
+
+    &_header{
+        text-align: center;
+    }
+
+    &-badges{
+        display: flex;
+        margin-top: 3rem;
+        justify-content: space-around;
+
+        &-img{
+            height: 10rem;
+            width: 10rem;
+            border-radius: 50%;
+            // box-shadow: 0 0 0.6rem 0rem black;
+        }
+
+        &_badges{
+            text-align: center;
+            padding: 3rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            background-color: rgb(43, 41, 41);
+            margin: 1rem;
+            border-radius: 0.6rem;
+            // height: 8rem;
+
+            &>img{
+                height: 7rem;
+            }
+        }
+    }
+}

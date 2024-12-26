@@ -1,20 +1,29 @@
 // @import "base/base";
 // @import "base/typography";
-// @import "base/utility";
 // @import "base/animations";
+
+
 
 @import "abstracts/mixins";
 @import "abstracts/variables";
 
-@import "layouts/navbar";
 
+
+@import "base/utility";
+
+
+
+@import "layouts/navbar";
 @import "layouts/index";
 @import "layouts/index1";
 @import "layouts/brands";       
-
+@import "layouts/services";
 @import "layouts/video";
 @import "layouts/becomepartner";
 @import "layouts/scrollbar";
 @import "layouts/engagement";
 @import "layouts/contact";
 @import "layouts/chatbot";
+@import "layouts/ourservices";
+@import "layouts/stories";
+@import "layouts/awards";

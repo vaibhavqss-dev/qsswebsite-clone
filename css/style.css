@@ -1,3 +1,7 @@
+.color-red {
+  color: red;
+}
+
 .navbar {
   position: fixed;
   z-index: 200;
@@ -12,14 +16,14 @@
 }
 
 .navbardetails-content {
-  width: 89vw;
+  width: 92vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
+  margin-left: 8.5rem;
 }
 
 .navbar-list {
-  font-size: 4vh;
   list-style: none;
   display: flex;
   justify-content: center;
@@ -38,13 +42,28 @@
 
 .Generativeai-reddot {
   width: 0vw;
-  border: 4px solid white;
+  border: 3px solid white;
   margin-right: 2vh;
+  border: none;
   height: 2vh;
   width: 1vw;
   border-radius: 3vh;
+  animation-name: Generativeai;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
+@keyframes Generativeai {
+  0% {
+    box-shadow: 0px 0px 5px 5px white;
+  }
+  50% {
+    box-shadow: 0px 0px 10px 10px white;
+  }
+  100% {
+    box-shadow: 0px 0px 20px 20px white;
+  }
+}
 .navbar-list li:last-child {
   height: 3vh;
   background-color: red;
@@ -59,7 +78,7 @@
   align-items: center;
 }
 
-.qsslogosvg {
+.qss-image {
   height: 8.5vh;
   margin-left: 3vh;
 }
@@ -86,33 +105,6 @@ body {
   display: block;
 }
 
-.services {
-  padding: 2vh;
-  margin-top: 13vh;
-  height: 30vh;
-  padding: 2vh;
-  text-align: center;
-  display: flex;
-  background-color: rgb(24, 23, 23);
-}
-
-.service-box {
-  background-color: rgb(44, 42, 42);
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  width: 21vw;
-  text-align: center;
-  padding: 2vh;
-  margin: 2vh;
-}
-
-.service-box > h1 {
-  font-size: 5vh;
-  font-weight: 500;
-}
-
 /* /////////////////////////////////////////// */
 /* img story Container Goes Here.... */
 .img-story {
@@ -121,17 +113,6 @@ body {
 
 .success-stories {
   text-align: center;
-}
-
-.engagement-model {
-  color: white;
-  /* height: 50vh; */
-  padding: 20vh 0 0 0;
-  /* justify-content: center; */
-  text-align: center;
-  height: 100vh;
-  width: 98vw;
-  background-image: url("./static_content/img/background.jpg");
 }
 
 .section-contactinfo {
@@ -268,33 +249,77 @@ footer > img {
   height: 6vh;
 }
 
-/* brandscontainer Goes here.... */
-.brandscontainer {
+.brands-section {
+  position: relative;
+  top: 8rem;
   width: 99vw;
   height: 100vh;
-  /* padding: 10vh; */
 }
-
-.brandscontainer-details {
+.brands-section-details {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  /* width: 40vw; */
   padding: 7vh;
 }
-
-.brandslogo-container {
-  padding: 0vh 10vh 0vh 15vh;
-  /* background-color: red; */
+.brands-section-details > h1 {
+  font-size: 1.9rem;
+  color: rgb(51, 50, 50);
 }
-
-.brandslogo-container > img {
-  /* width: 9vw; */
+.brands-section-details > p {
+  padding: 1rem 3rem;
+  font-size: 1.2rem;
+  color: rgb(51, 50, 50);
+}
+.brands-section-logo-section {
+  padding: 0vh 10vh 0vh 15vh;
+}
+.brands-section-logo-section > img {
   height: 7vh;
   padding: 2vh;
   margin: 5vh;
+  transition: all 0.4s infinite;
+}
+.brands-section-logo-section > img:hover {
+  border: 1px solid rgb(51, 50, 50);
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+.services {
+  padding: 2vh;
+  margin-top: 13vh;
+  height: 30vh;
+  padding: 1vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(24, 23, 23);
+}
+
+.service-box-container {
+  padding: 0.5rem 1.6rem;
+  perspective: 22rem;
+}
+
+.service-box {
+  background-color: rgb(44, 42, 42);
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  width: 18rem;
+  text-align: center;
+  padding: 2.1rem 0;
+}
+.service-box > h1 {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.service-box-container:hover > .service-box {
+  transform: rotateY(180deg);
+  transition: transform 0.8s;
 }
 
 .video-section {
@@ -313,59 +338,75 @@ footer > img {
   color: white;
   padding: 5vh;
 }
-
 .videoover-textdisplay {
-  margin: 0vh 0vh 15vh 0vh;
+  font-size: 1.3rem;
+  margin-bottom: 4rem;
+  font-weight: 300;
+}
+.videoover-text-moving-text > h2 {
+  color: transparent;
+  background-color: #ec3636;
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  background-position: 0 0;
+  width: 14rem;
+  height: 3rem;
+  animation: moving-text-animation 2s linear infinite alternate;
+}
+@keyframes moving-text-animation {
+  100% {
+    width: 0;
+  }
 }
 
 .videooverbtn-consultation {
   border: none;
   color: white;
   background-color: #ec3636;
-  padding: 2vh;
-  border-radius: 1vh;
-  font-weight: 400;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  font-weight: 500;
   font-family: "Poppins";
-  font-size: 3vh;
+  font-size: 1.1rem;
 }
 
 .videooverbtn-portfolio {
   color: #ec3636;
   background-color: white;
   border: none;
-  padding: 2vh 3vh;
-  border-radius: 1vh;
-  font-size: 2.5vh;
-  margin-left: 5vh;
+  padding: 0.5rem 1.4rem;
+  border-radius: 6px;
+  font-size: 17px;
+  margin-left: 1rem;
   font-family: "Poppins";
 }
 
 .videooverbtn-rating {
-  background-image: url(https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/qss-reviews-icon.png);
-  background-repeat: no-repeat;
-  width: 13vw;
-  height: 7vh;
+  width: 14.1rem;
   display: block;
   border: none;
-  padding: 3vh;
-  margin-top: 4vh;
-  border-radius: 1vh;
+  padding: 0.5rem;
+  margin-top: 1.5rem;
+  border-radius: 8px;
+}
+.videooverbtn-rating > img {
+  height: 2rem;
 }
 
-.handshake-container {
+.handshake-section {
   height: 100vh;
   width: 99vw;
   background-size: cover;
   position: relative;
   margin-bottom: 14vh;
 }
-
-.handshake-container > img {
+.handshake-section > img {
   width: 95vw;
   margin: 3vh 3vh 0vh 4vh;
 }
-
-.handshakedetails {
+.handshake-section-details {
   top: 30vh;
   display: flex;
   position: absolute;
@@ -374,68 +415,57 @@ footer > img {
   box-shadow: 0px 0px 15px 1px black;
   padding: 5vh;
 }
-
-.handshakedetails > div {
+.handshake-section-details > div {
   padding: 3vh;
 }
-
-.leftside-squarebracket {
-  background-color: #ec3636;
-  height: 15rem;
-  width: 1rem;
-}
-
-.rightside-squarebracket {
-  background-color: #ec3636;
-}
-
-.thirty-years {
+.handshake-section-details_thirty-years {
   width: 40%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
-.thirtynumber {
-  color: red;
+.handshake-section-details_thirty-years_leftsideSquarebracket {
+  background-color: #ec3636;
+  height: 15rem;
+  width: 1rem;
+}
+.handshake-section-details_thirty-years_rightsideSquarebracket {
+  background-color: #ec3636;
+  height: 15rem;
+  width: 1rem;
+}
+.handshake-section-details_thirty-years_thirtyNumber {
+  color: #ec3636;
   font-size: 9vh;
   font-weight: 500;
 }
-
-.handshakesolutions {
+.handshake-section-details_thirty-years_yearsInText {
+  font-size: 1.4rem;
+  font-weight: 500;
+  width: 7rem;
+}
+.handshake-section-details_handshakeSolutions {
   width: 60%;
   line-height: 4vh;
 }
-
-.handshakesolutions > h1 {
-  margin: 2vh;
-  font-size: 4vh;
+.handshake-section-details_handshakeSolutions > h1 {
   font-weight: 600;
 }
-
-.handshakesolutions > h3 {
-  font-size: 3vh;
-  margin: 2vh;
+.handshake-section-details_handshakeSolutions > h3 {
+  margin: 0.9rem 0rem;
   font-weight: 600;
 }
-
-.handshakesolutions > p {
-  margin: 2vh;
-}
-
-.handshakesolutionsbuttion {
-  border: 1px solid red;
-  padding: 2vh;
-  width: 12vw;
-  color: red;
-  font-weight: bolder;
-  border-radius: 1vh;
+.handshake-section-details_handshakeSolutions_BecomePartnerbtn {
+  border: 1px solid #ec3636;
+  padding: 1rem 2rem;
+  margin: 1.5rem 0rem;
+  color: #ec3636;
+  border-radius: 7px;
   background-color: transparent;
   font-weight: 700;
 }
-
-.handshakesolutionsbuttion:hover {
-  background-color: red;
+.handshake-section-details_handshakeSolutions_BecomePartnerbtn:hover {
+  background-color: #ec3636;
   color: white;
   cursor: pointer;
   transition: all 1s;
@@ -448,7 +478,6 @@ footer > img {
 }
 
 ::-webkit-scrollbar-track {
-  /* background: transparent; */
   border-radius: 10px;
   opacity: 0;
   display: transparent;
@@ -459,9 +488,6 @@ footer > img {
 ::-webkit-scrollbar-thumb {
   background: rgb(8, 8, 8);
   border-radius: 10px;
-  /* height: 3vh; */
-  /* size: 1vh; */
-  /* width: 1vw; */
 }
 
 /* scrollbar-width  */
@@ -567,6 +593,156 @@ footer > img {
   height: 10vh;
   border-radius: 10vw;
   background-color: red;
+}
+
+.services-section {
+  background-color: #020128;
+  position: relative;
+  top: 5rem;
+  color: white;
+}
+.services-section_header {
+  text-align: center;
+  padding: 4rem;
+  margin: 4rem;
+}
+.services-section_header > p {
+  font-size: 1.1rem;
+  font-weight: 300;
+  margin: 1rem;
+}
+.services-section_uiux {
+  display: flex;
+  padding: 1.3rem;
+}
+.services-section_uiux_para {
+  text-align: left;
+  margin: 0rem 1.2rem;
+}
+.services-section_uiux_para > h1 {
+  margin-top: 2rem;
+  font-weight: 600;
+}
+.services-section_uiux_para > h3 {
+  margin-top: 0.9rem;
+  font-size: 1rem;
+  font-weight: 400;
+}
+.services-section_uiux_para > p {
+  font-size: 0.9rem;
+  font-weight: 400;
+  margin: 1rem 0rem;
+}
+.services-section_uiux_para_btn {
+  border: 3px solid white;
+  padding: 1rem 2rem;
+  border-radius: 0.6rem;
+  background-color: transparent;
+  color: white;
+}
+.services-section_uiux_para_btn:hover {
+  border: 3px solid #ec3636;
+  background-color: #ec3636;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.services-section_uiux > img {
+  width: 50%;
+  height: 100%;
+  border-radius: 1rem;
+}
+
+.successstories-section {
+  position: relative;
+  top: 8rem;
+  height: 140vh;
+}
+.successstories-section-header {
+  text-align: center;
+  padding: 3rem 10rem;
+}
+.successstories-section_photo-section {
+  padding: 4rem;
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+}
+.successstories-section_photo-section-img > img {
+  top: 18rem;
+  left: 8rem;
+  position: absolute;
+  height: 34rem;
+  width: 35rem;
+  border-radius: 1rem;
+  box-shadow: 0 0 0.6rem 0rem black;
+}
+.successstories-section_photo-section-details {
+  width: 28rem;
+  padding: 3rem;
+  text-align: left;
+}
+.successstories-section_photo-section-details > h1 {
+  font-weight: 700;
+  font-size: 2.4rem;
+  color: rgb(54, 47, 47);
+}
+.successstories-section_photo-section-details > h3 {
+  font-size: 1rem;
+}
+.successstories-section_photo-section-details > p {
+  line-height: 1.8rem;
+  color: gray;
+}
+.successstories-section_photo-section-details_btn {
+  border: 2px solid red;
+  border-radius: 0.4rem;
+  background-color: transparent;
+  padding: 1rem 2rem;
+  color: red;
+  font-size: 0.8rem;
+}
+.successstories-section_photo-section-details_btn:hover {
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.awards-section {
+  position: relative;
+  top: 7rem;
+  color: white;
+  padding: 2rem;
+  height: 70vh;
+  background-color: rgb(20, 20, 20);
+}
+.awards-section_header {
+  text-align: center;
+}
+.awards-section-badges {
+  display: flex;
+  margin-top: 3rem;
+  justify-content: space-around;
+}
+.awards-section-badges-img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+}
+.awards-section-badges_badges {
+  text-align: center;
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(43, 41, 41);
+  margin: 1rem;
+  border-radius: 0.6rem;
+}
+.awards-section-badges_badges > img {
+  height: 7rem;
 }
 
 /*# sourceMappingURL=style.css.map */

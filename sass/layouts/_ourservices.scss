@@ -1,0 +1,66 @@
+.services-section{
+    background-color: #020128;
+    position: relative;
+    top: 5rem;
+    color: white;
+
+    &_header{
+        text-align: center;
+        padding: 4rem;
+        margin: 4rem;
+
+        &>p{
+            font-size: 1.1rem;
+            font-weight: 300;
+            margin: 1rem;
+        }
+    }
+
+    &_uiux{
+        @include display-flex();
+        padding: 1.3rem;
+
+        &_para{
+            text-align: left;
+            margin: 0rem 1.2rem;
+
+            &>h1{
+                margin-top: 2rem;
+                font-weight: 600;
+            }
+            &>h3{
+                margin-top: 0.9rem;
+                font-size: 1rem;
+                font-weight: 400;
+            }
+            &>p{
+                font-size: 0.9rem;
+                font-weight: 400;
+                margin: 1rem 0rem;
+            }
+
+            &_btn{
+                border: 3px solid white;
+
+                padding: 1rem 2rem;
+                border-radius: 0.6rem;
+                background-color: transparent;
+                color: white;
+
+                &:hover{
+                    border: 3px solid #ec3636;
+                    background-color: #ec3636;
+                    color: white;
+                    cursor: pointer;
+                    transition: all 0.3s;
+                }
+            }
+        }
+
+        &>img{
+            width: 50%;
+            height: 100%;
+            border-radius: 1rem;
+        }
+    }
+}

@@ -1,30 +1,44 @@
-
-/* brandscontainer Goes here.... */
-.brandscontainer {
+.brands-section {
+    position: relative;
+    top: 8rem;
     width: 99vw;
     height: 100vh;
-    /* padding: 10vh; */
-}
 
-.brandscontainer-details {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
-    text-align: center;
-    /* width: 40vw; */
-    padding: 7vh;
-}
+    &-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 7vh;
 
-.brandslogo-container {
-    padding: 0vh 10vh 0vh 15vh;
-    /* background-color: red; */
-}
+        &>h1 {
+            font-size: 1.9rem;
+            color: rgb(51, 50, 50);
+        }
+        &>p {
+            padding: 1rem 3rem;
+            font-size: 1.2rem;
+            color: rgb(51, 50, 50);
+        }
+    }
 
-.brandslogo-container>img {
-    /* width: 9vw; */
-    height: 7vh;
-    padding: 2vh;
-    margin: 5vh;
+    &-logo-section {
+        padding: 0vh 10vh 0vh 15vh;
+
+        &>img {
+            height: 7vh;
+            padding: 2vh;
+            margin: 5vh;
+
+            transition: all .4s infinite; 
+
+            &:hover {
+                border: 1px solid rgb(51, 50, 50);
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+        }
+    }
 }
