@@ -1,50 +1,48 @@
-/* Contact Container Goes Here... */
-.contactcontainer {
+.contact-section {
     position: relative;
-}
+    top: 13rem;
 
-.contactcontainer > img {
-    margin: 3vh;
-    width: 97vw;
-}
+    &>img{
+        margin: 1rem;
+        width: 98vw;
+    }
 
-.contactform-container {
-    margin: 9rem;
-    padding: 4rem;
-    box-shadow: 1px 1px 15px 0px rgb(27, 27, 27);
-    background-color: white;
-    position: absolute;
-    top: 19vh;
-    width: 72vw;
-}
+    &_form{
+        position: absolute;
+        top: 19vh;
+        width: 72vw;
+        margin: 9rem;
+        padding: 4rem;
+        background-color: white;
+        box-shadow: 1px 1px 15px 0px rgb(27, 27, 27);
 
-.contactform-details{
-    font-family: $font-family;
-    font-size: $font-size;
-    text-align: center;
-    font-weight: 400;
-}
+        &-header{
+            color: rgb(51, 51, 51);
+            font-family: $font-family;
+            font-size: $font-size;
+            text-align: center;
+            font-weight: 300;
 
-.contactform-details > p {
-    font-size: 1.1rem;
-}
+            &>h2{
+                font-size: 2rem;
+                // font-weight: 500;
+                line-height: 2.4rem;
+            }
 
-// Contact Form Styling, Form, and Input Fields
-.contactform {
-    margin: 2vw;
-    height: 100vh;
-    width: 65vw;
-    background-color: red;
-}
-.contactform > form > label {
-    display: inline-block;
-    width: 46vw;
-}
+            &>p{
+                font-size: 1rem;
+                font-weight: 400;
+            }
+        }
 
-.contactform > form {
-    // max-width: 50vw;
-    // display: flex;
-    // flex-direction: row;
-    // justify-content: center;
-    // align-items: center;
+        &-formSection{
+            margin-top: 3rem;
+
+            &>form{
+                
+            }
+        }
+    }
+
+
 }

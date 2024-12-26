@@ -276,15 +276,13 @@ footer > img {
   padding: 0vh 10vh 0vh 15vh;
 }
 .brands-section-logo-section > img {
-  height: 7vh;
-  padding: 2vh;
-  margin: 5vh;
+  width: 6rem;
+  padding: 1.9rem;
+  margin: 0.5rem;
   transition: all 0.4s infinite;
 }
 .brands-section-logo-section > img:hover {
-  border: 1px solid rgb(51, 50, 50);
   cursor: pointer;
-  transform: scale(1.1);
 }
 
 .services {
@@ -524,49 +522,41 @@ footer > img {
   border-radius: 0.8vh;
 }
 
-/* Contact Container Goes Here... */
-.contactcontainer {
+.contact-section {
   position: relative;
+  top: 13rem;
 }
-
-.contactcontainer > img {
-  margin: 3vh;
-  width: 97vw;
+.contact-section > img {
+  margin: 1rem;
+  width: 98vw;
 }
-
-.contactform-container {
-  margin: 9rem;
-  padding: 4rem;
-  box-shadow: 1px 1px 15px 0px rgb(27, 27, 27);
-  background-color: white;
+.contact-section_form {
   position: absolute;
   top: 19vh;
   width: 72vw;
+  margin: 9rem;
+  padding: 4rem;
+  background-color: white;
+  box-shadow: 1px 1px 15px 0px rgb(27, 27, 27);
 }
-
-.contactform-details {
+.contact-section_form-header {
+  color: rgb(51, 51, 51);
   font-family: "Poppins", sans-serif;
   font-size: 3vh;
   text-align: center;
+  font-weight: 300;
+}
+.contact-section_form-header > h2 {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+.contact-section_form-header > p {
+  font-size: 1rem;
   font-weight: 400;
 }
-
-.contactform-details > p {
-  font-size: 1.1rem;
+.contact-section_form-formSection {
+  margin-top: 3rem;
 }
-
-.contactform {
-  margin: 2vw;
-  height: 100vh;
-  width: 65vw;
-  background-color: red;
-}
-
-.contactform > form > label {
-  display: inline-block;
-  width: 46vw;
-}
-
 /* Chatbot Element starts from here */
 .chatbotcontainer {
   background-color: white;
