@@ -1,13 +1,33 @@
 
 /* //////////////////////// */
 .engagementmodel {
-    background-image: url("https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/engagement-models-cta-banner.jpg");
+    position: relative;
+    top: 51rem;
+    background-image: url(https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/engagement-models-cta-banner.jpg);
     background-size: cover;
     height: 100vh;
     opacity: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    // overflow: hidden;
+}
+
+.engagementmodel::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgb(48 0 59 / 50%);
+    backdrop-filter: blur(1px);
+    z-index: 1;
+}
+
+.engagementmodel > * {
+    position: relative;
+    z-index: 2;
 }
 
 .engagementmodel-container {
@@ -15,14 +35,28 @@
     color: white;
     width: 50vw;
     height: 20vh;
-}
 
-.engagementmodel-container>button {
-    margin-top: 2vh;
-    font-size: 2.5vh;
-    background-color: transparent;
-    color: white;
-    padding: 1vh;
-    border: 2px solid white;
-    border-radius: 0.8vh;
+    &>h1 {
+        font-size: 4vh;
+        font-weight: 700;
+        margin-bottom: 2vh;
+    }
+
+    &>button{
+        margin-top: 2vh;
+        font-size: 2.5vh;
+        background-color: transparent;
+        color: white;
+        padding: 1vh;
+        border: 2px solid white;
+        border-radius: 0.8vh;
+        width: 13rem;
+        transition: all .3s;
+    
+        &:hover{
+            background-color: white;
+            color: black;
+            cursor: pointer;
+        }
+    }
 }

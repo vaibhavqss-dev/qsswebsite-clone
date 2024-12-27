@@ -1,0 +1,58 @@
+.location-details {
+    position: relative;
+    top: 51rem;
+    background: #181818;
+    padding: 4rem 2rem;
+    background-image: url(https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/usa-address-bg.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+
+    &>p{
+        font-size: 1.2rem;
+        margin-top: 1rem;
+    }
+
+    &>h1{
+        font-size: 2rem;
+    }
+
+    & h2{
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        font-weight: 600;
+    }
+
+    &-USAINDIA{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2rem;
+        align-items: center;
+        width: 9rem;
+    }
+
+    &-contactDetails {
+        &>div {
+            margin: 0rem 0;
+        }
+
+        & p {
+            display: inline;
+            text-align: center;
+        }
+        
+        &-contactInfo {
+            width: 60vw;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+
+            &>p {
+                margin-left: 1vw;
+                font-size: 1.1rem;
+            }
+            &>svg {
+                height: 7vh;
+            }
+        }
+    }
+}

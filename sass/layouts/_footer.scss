@@ -1,0 +1,18 @@
+/* //////////////////////////////// */
+footer {
+    position: relative;
+    top: 51rem;
+    background: #000;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.8rem;
+
+
+    & > img {
+        cursor: pointer;
+        margin: 2vh;
+        height: 6vh;
+    }
+}

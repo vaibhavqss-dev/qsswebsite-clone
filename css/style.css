@@ -115,140 +115,6 @@ body {
   text-align: center;
 }
 
-.section-contactinfo {
-  background: #181818;
-  padding: 2vh;
-  background-image: url(https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/usa-address-bg.jpg);
-  background-size: 100% 100%;
-  height: 100vh;
-}
-
-.contactinfo-container > div {
-  margin: 4vh 0;
-}
-
-.contactinfo-container p {
-  display: inline;
-  text-align: center;
-}
-
-.contactinfo {
-  width: 60vw;
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  /* background-color: red; */
-}
-
-.contactinfo > p {
-  margin-left: 1vw;
-}
-
-.contactinfo > svg {
-  height: 7vh;
-}
-
-/* /////////////////////////////////////////////////////// */
-/* FooterSectionGoesHere */
-.footer-section-goes-here {
-  display: flex;
-  background-color: rgb(22, 20, 20);
-  color: white;
-  /* padding: 2vh; */
-  justify-content: space-around;
-  align-items: center;
-  font-size: 2vh;
-  font-family: "Poppins", sans-serif;
-}
-
-.footerabout-section {
-  margin-top: 7vh;
-  height: 55vh;
-  width: 24vw;
-  display: inline-block;
-}
-
-.footerabout-section img {
-  height: 11vh;
-}
-
-.footerabout-section > p {
-  line-height: 4vh;
-}
-
-.item-social img {
-  background-color: rgb(48, 45, 45);
-  border-radius: 5vh;
-  height: 6vh;
-}
-
-.industries {
-  margin-top: 7vh;
-  height: 55vh;
-  line-height: 5vh;
-}
-
-.industries > ul {
-  list-style-type: none;
-}
-
-.footerServices-section {
-  margin-top: 7vh;
-  height: 55vh;
-  line-height: 5vh;
-}
-
-.footerServices-section > ul {
-  list-style-type: none;
-}
-
-.quicklinks {
-  margin-top: 7vh;
-  height: 55vh;
-  line-height: 5vh;
-}
-
-.quicklinks > ul {
-  list-style-type: none;
-}
-
-.footerTechnologies-section {
-  margin-top: 7vh;
-  height: 55vh;
-  line-height: 5vh;
-  overflow: hidden;
-}
-
-.techbtn-container {
-  overflow: hidden;
-}
-
-.techbtn {
-  text-align: center;
-  border: 1px solid rgb(161, 158, 158);
-  border-radius: 1vh;
-  display: block;
-  margin: 1vh;
-  overflow: hidden;
-}
-
-/* //////////////////////////////// */
-/* //////////////////////////////// */
-footer {
-  background: #000;
-  padding: 1vh;
-  display: flex;
-  color: white;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.5vh;
-}
-
-footer > img {
-  margin: 2vh;
-  height: 6vh;
-}
-
 .brands-section {
   position: relative;
   top: 8rem;
@@ -496,7 +362,9 @@ footer > img {
 
 /* //////////////////////// */
 .engagementmodel {
-  background-image: url("https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/engagement-models-cta-banner.jpg");
+  position: relative;
+  top: 51rem;
+  background-image: url(https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/engagement-models-cta-banner.jpg);
   background-size: cover;
   height: 100vh;
   opacity: 1;
@@ -505,13 +373,34 @@ footer > img {
   align-items: center;
 }
 
+.engagementmodel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(48, 0, 59, 0.5);
+  backdrop-filter: blur(1px);
+  z-index: 1;
+}
+
+.engagementmodel > * {
+  position: relative;
+  z-index: 2;
+}
+
 .engagementmodel-container {
   text-align: center;
   color: white;
   width: 50vw;
   height: 20vh;
 }
-
+.engagementmodel-container > h1 {
+  font-size: 4vh;
+  font-weight: 700;
+  margin-bottom: 2vh;
+}
 .engagementmodel-container > button {
   margin-top: 2vh;
   font-size: 2.5vh;
@@ -520,6 +409,13 @@ footer > img {
   padding: 1vh;
   border: 2px solid white;
   border-radius: 0.8vh;
+  width: 13rem;
+  transition: all 0.3s;
+}
+.engagementmodel-container > button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
 }
 
 .contact-section {
@@ -557,6 +453,103 @@ footer > img {
 .contact-section_form-formSection {
   margin-top: 3rem;
 }
+.contact-section_form-formSection > form > button {
+  background-color: #ec3636;
+  border: none;
+  border-radius: 0.2rem;
+  color: white;
+  cursor: pointer;
+  display: block;
+  font-size: 1rem;
+  margin: 1.4rem 0;
+  padding: 0.8rem 1.3rem;
+  transition: background-color 0.3s;
+}
+.contact-section_form-formSection > form > button:hover {
+  background-color: #ec3636;
+}
+.contact-section_form-formSection > p {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.first-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.second-section {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.label-section {
+  position: relative;
+}
+.label-section > label {
+  font-size: 0.9rem;
+  display: block;
+  color: rgb(22, 22, 22);
+}
+.label-section > label::after {
+  content: "*";
+  color: red;
+}
+.label-section > input {
+  border: 1px solid rgb(155, 153, 153);
+  border-radius: 0.4rem;
+  display: inline-block;
+  height: 1.4rem;
+  padding: 0.6rem;
+  width: 28rem;
+}
+.label-section > input:focus {
+  outline: none;
+}
+.label-section > svg {
+  position: absolute;
+  right: 1rem;
+  top: 2rem;
+}
+
+.attachmentInputFileText {
+  position: absolute;
+  top: 2rem;
+  background: white;
+  left: 0.5rem;
+  font-size: 0.9rem;
+  padding: 0 0.7rem;
+  color: rgb(24, 23, 23);
+  cursor: pointer;
+}
+
+#myFile {
+  cursor: pointer;
+}
+
+.third-section > label {
+  font-size: 0.9rem;
+  display: block;
+  color: rgb(22, 22, 22);
+}
+.third-section > label::after {
+  content: "*";
+  color: red;
+}
+.third-section > textarea {
+  border: 1px solid rgb(155, 153, 153);
+  border-radius: 0.5rem;
+  display: inline-block;
+  height: 5rem;
+  padding: 0.7rem;
+  width: 60.7rem;
+}
+.third-section > textarea:focus {
+  outline: none;
+}
+
 /* Chatbot Element starts from here */
 .chatbotcontainer {
   background-color: white;
@@ -733,6 +726,224 @@ footer > img {
 }
 .awards-section-badges_badges > img {
   height: 7rem;
+}
+
+.location-details {
+  position: relative;
+  top: 51rem;
+  background: #181818;
+  padding: 4rem 2rem;
+  background-image: url(https://www.qsstechnosoft.com/wp-content/themes/qss/assets/img/usa-address-bg.jpg);
+  background-size: 100% 100%;
+  height: 100vh;
+}
+.location-details > p {
+  font-size: 1.2rem;
+  margin-top: 1rem;
+}
+.location-details > h1 {
+  font-size: 2rem;
+}
+.location-details h2 {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+.location-details-USAINDIA {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+  align-items: center;
+  width: 9rem;
+}
+.location-details-contactDetails > div {
+  margin: 0rem 0;
+}
+.location-details-contactDetails p {
+  display: inline;
+  text-align: center;
+}
+.location-details-contactDetails-contactInfo {
+  width: 60vw;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.location-details-contactDetails-contactInfo > p {
+  margin-left: 1vw;
+  font-size: 1.1rem;
+}
+.location-details-contactDetails-contactInfo > svg {
+  height: 7vh;
+}
+
+.footer-section-goes-here {
+  position: relative;
+  top: 51rem;
+  display: flex;
+  background-color: rgb(22, 20, 20);
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 2vh;
+  font-family: "Poppins", sans-serif;
+  padding-top: 3rem;
+  padding-bottom: 4rem;
+}
+.footer-section-goes-here_about-section {
+  display: inline-block;
+  width: 20rem;
+  margin-left: 2rem;
+}
+.footer-section-goes-here_about-section img {
+  height: 11vh;
+  cursor: pointer;
+}
+.footer-section-goes-here_about-section > p {
+  margin-top: 1rem;
+  line-height: 1.8rem;
+}
+.footer-section-goes-here_about-section_item-social img {
+  margin: 0.2rem;
+  margin-top: 0.4rem;
+  background-color: rgb(41, 39, 39);
+  border-radius: 4rem;
+  height: 2.2rem;
+  transition: all 0.3s;
+}
+.footer-section-goes-here_about-section_item-social img:hover {
+  background-color: #007bff;
+  transform: scale(1.1);
+}
+.footer-section-goes-here_about-section_item-social > a.pinterest > img:hover, .footer-section-goes-here_about-section_item-social > a.youtube > img:hover {
+  background-color: #ff0000;
+}
+.footer-section-goes-here_about-section_item-social > a.instagram > img:hover {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #8a0eab, #5a0f7f, #1e1f50);
+}
+.footer-section-goes-here_about-section_item-social > a.facbook > img:hover {
+  background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888, #8a0eab, #5a0f7f, #1e1f50);
+}
+.footer-section-goes-here_industries {
+  display: inline-block;
+  width: 12rem;
+  height: 21rem;
+}
+.footer-section-goes-here_industries > ul {
+  margin-top: 1rem;
+  list-style-type: none;
+  cursor: pointer;
+  line-height: 2.4rem;
+  transition: all 0.3s;
+}
+.footer-section-goes-here_industries > ul li {
+  position: relative;
+  overflow: hidden;
+}
+.footer-section-goes-here_industries > ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease-out;
+}
+.footer-section-goes-here_industries > ul li:hover::after {
+  width: 100%;
+}
+.footer-section-goes-here_services {
+  height: 21.7rem;
+  line-height: 2.4rem;
+}
+.footer-section-goes-here_services > ul {
+  margin-top: 0.7rem;
+  list-style-type: none;
+  cursor: pointer;
+  line-height: 2.4rem;
+  transition: all 0.3s;
+}
+.footer-section-goes-here_services > ul li {
+  position: relative;
+  overflow: hidden;
+}
+.footer-section-goes-here_services > ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease-out;
+}
+.footer-section-goes-here_services > ul li:hover::after {
+  width: 100%;
+}
+.footer-section-goes-here_quicklinks {
+  height: 21.4rem;
+}
+.footer-section-goes-here_quicklinks > ul {
+  list-style-type: none;
+  margin-top: 1rem;
+  line-height: 2.4rem;
+  cursor: pointer;
+  line-height: 2.4rem;
+  transition: all 0.3s;
+}
+.footer-section-goes-here_quicklinks > ul li {
+  position: relative;
+  overflow: hidden;
+}
+.footer-section-goes-here_quicklinks > ul li::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: currentColor;
+  transition: width 0.3s ease-out;
+}
+.footer-section-goes-here_quicklinks > ul li:hover::after {
+  width: 100%;
+}
+.footer-section-goes-here_technologies {
+  margin-right: 1rem;
+  height: 21.6rem;
+  width: 16rem;
+}
+.footer-section-goes-here_technologies_techbtn-container {
+  margin-top: 0.9rem;
+}
+.footer-section-goes-here_technologies_techbtn-container li {
+  font-size: 0.8rem;
+  padding: 0rem 0.6rem;
+  border-radius: 0.4rem;
+  display: inline-block;
+  text-align: center;
+  list-style: none;
+  line-height: 2.6rem;
+  border: 1px solid rgb(78, 74, 74);
+  margin: 0.3rem;
+}
+
+/* //////////////////////////////// */
+footer {
+  position: relative;
+  top: 51rem;
+  background: #000;
+  display: flex;
+  color: white;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+footer > img {
+  cursor: pointer;
+  margin: 2vh;
+  height: 6vh;
 }
 
 /*# sourceMappingURL=style.css.map */
