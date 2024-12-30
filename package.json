@@ -4,9 +4,8 @@
   "description": "This is Clone of qss website",
   "main": "index.js",
   "scripts": {
-    "start": "node index.html",
-    "compile:scss": "sass sass/main.scss css/style.css",
-    "watch:scss": "sass sass/main.scss css/style.css -w"
+    "start": "sass sass/main.scss css/style.css -w",
+    "compile:scss": "sass sass/main.scss css/style.css"
   },
   "keywords": [],
   "author": "",
