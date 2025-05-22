@@ -5,17 +5,17 @@
   "main": "index.js",
   "scripts": {
     "start": "sass sass/main.scss css/style.css -w",
-    "compile:scss": "sass sass/main.scss css/style.css"
+    "compile:scss": "sass --style=compressed sass/main.scss css/style.css"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jquery": "^3.7.1",
     "live-server": "^1.2.2"
   },
   "devDependencies": {
+    "html-minifier": "^4.0.0",
     "nodemon": "^3.1.9",
-    "sass": "^1.83.0"
+    "sass": "^1.89.0"
   }
 }
